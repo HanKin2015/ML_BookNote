@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>hello world &mdash; ML_BookNote 1.0 文档</title>
+  <title>reStructuredText(rst) &mdash; ML_BookNote 1.0 文档</title>
   
 
   
@@ -36,8 +36,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="hello,world!!!!" href="no_dir.html" />
-    <link rel="prev" title="hello world" href="hello1.html" /> 
+    <link rel="prev" title="行内样式" href="rst_syntax.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,12 +81,23 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="hello1.html">hello world</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">hello world</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#test-markdown">test markdown</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="no_dir.html">hello,world!!!!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="EDA.html">数据分析（EDA）学习总结</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_syntax.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_syntax.html#id2">语法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_syntax.html#h1">H1标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_syntax.html#id4">一级标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html">行内样式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id5">章节标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id6">一级标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id8">一级标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id14">段落</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id15">列表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#blocks">块(Blocks)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#tables">表格(Tables)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id16">分隔符</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id17">超链接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#comments">注释(Comments)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">reStructuredText(rst)</a></li>
 </ul>
 
             
@@ -133,13 +143,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>hello world</li>
+      <li>reStructuredText(rst)</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/usage/hello2.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/usage/rst_syntax_template.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -152,22 +162,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="hello-world">
-<h1>hello world<a class="headerlink" href="#hello-world" title="永久链接至标题">¶</a></h1>
-<div class="section" id="test-markdown">
-<h2>test markdown<a class="headerlink" href="#test-markdown" title="永久链接至标题">¶</a></h2>
-<p>当前进展：</p>
-<ol class="simple">
-<li><p>远程笔记本电脑自带一个摄像头，则总共有三个摄像头，我们目前只支持两个摄像头。所以将笔记本摄像头加入黑名单，但是测试还是无法使用。</p></li>
-<li><p>现象：高拍仪的主副摄像头能在虚拟机的设备管理器看见（即映射进去），但是当使用高拍仪软件或者amcap后则主摄像头就会断开映射（设备管理器里只有副摄像头的映射），因此软件无法找到主摄像头设备。</p></li>
-<li><p>通过观察客户端日志没有发现任何错误，查看了vmp的日志（qemu和camera日志）也未发现错误</p></li>
-<li><p>数据包抓包有错误，但是没有正常的数据包进行对比分析</p></li>
-</ol>
-<p>下一步计划：</p>
-<ol class="simple">
-<li><p>使用盒子进行尝试，配置camera名单走usb映射</p></li>
-</ol>
-</div>
+  <div class="section" id="restructuredtext-rst">
+<h1>reStructuredText(rst)<a class="headerlink" href="#restructuredtext-rst" title="永久链接至标题">¶</a></h1>
+<p>reStructuredText 是扩展名为.rst的纯文本文件，含义为”重新构建的文本”，也被简称为：RST或reST；是Python编程语言的Docutils项目的一部分，Python Doc-SIG (Documentation Special Interest Group)。该项目类似于Java的JavaDoc或Perl的POD项目。 Docutils 能够从Python程序中提取注释和信息，格式化成程序文档。</p>
+<p>.rst 文件是轻量级标记语言的一种，被设计为容易阅读和编写的纯文本，并且可以借助Docutils这样的程序进行文档处理，也可以转换为HTML或PDF等多种格式，或由Sphinx-Doc这样的程序转换为LaTex、man等更多格式。</p>
+<p>不太习惯，如果以后会用到再来学习。</p>
 </div>
 
 
@@ -178,10 +177,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="no_dir.html" class="btn btn-neutral float-right" title="hello,world!!!!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="hello1.html" class="btn btn-neutral float-left" title="hello world" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="rst_syntax.html" class="btn btn-neutral float-left" title="行内样式" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

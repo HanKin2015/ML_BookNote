@@ -1,0 +1,264 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>数据分析（EDA）学习总结 &mdash; ML_BookNote 1.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="前言" href="md_syntax.html" />
+    <link rel="prev" title="Welcome to ML_BookNote’s documentation!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ML_BookNote
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">数据分析（EDA）学习总结</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0、简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">一、数据及背景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">二、实验环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">三、数据探索</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="md_syntax.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_syntax.html#id2">语法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_syntax.html#h1">H1标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md_syntax.html#id4">一级标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html">行内样式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id5">章节标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id6">一级标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id8">一级标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id14">段落</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id15">列表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#blocks">块(Blocks)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#tables">表格(Tables)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id16">分隔符</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#id17">超链接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax.html#comments">注释(Comments)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst_syntax_template.html">reStructuredText(rst)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ML_BookNote</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>数据分析（EDA）学习总结</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/usage/EDA.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>[TOC]</p>
+<div class="section" id="eda">
+<h1>数据分析（EDA）学习总结<a class="headerlink" href="#eda" title="永久链接至标题">¶</a></h1>
+<p>参考：https://mp.weixin.qq.com/s/DWUmup4P_tdYWaK3buK72w</p>
+<div class="section" id="id1">
+<h2>0、简介<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>探索性数据分析（Exploratory Data Analysis，EDA）是一种探索数据的结构和规律的一种数据分析方法。</p>
+<ul class="simple">
+<li><p>对数据进行清洗</p></li>
+<li><p>对数据进行描述（描述统计量，图表）</p></li>
+<li><p>查看数据的分布</p></li>
+<li><p>比较数据之间的关系</p></li>
+<li><p>培养对数据的直觉</p></li>
+<li><p>对数据进行总结</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>一、数据及背景<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>https://tianchi.aliyun.com/competition/entrance/531810/information（阿里天池-零基础入门NLP赛事）</p>
+</div>
+<div class="section" id="id3">
+<h2>二、实验环境<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>导入需要使用的包</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">scipy</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">Counter</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>三、数据探索<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>首先，利用Pandas对数据进行读取。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df_train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">train_path</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">df_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">test_path</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="md_syntax.html" class="btn btn-neutral float-right" title="前言" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to ML_BookNote’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, hankin
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

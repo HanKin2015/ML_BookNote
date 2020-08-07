@@ -9,10 +9,10 @@ Welcome to ML_BookNote's documentation!
 .. toctree::
    :maxdepth: 2
    
-   usage/hello1
-   usage/hello2
-   usage/no_dir
-   
+   usage/EDA
+   usage/md_syntax
+   usage/rst_syntax
+   usage/rst_syntax_template
 
 
 
