@@ -420,10 +420,10 @@ True   True   True
 reStructuredText会自动将网址生成超链接。
 
 ```
-https://github.com/SeayXu/
+hhttps://github.com/HanKin2015
 ```
 
-[https://github.com/SeayXu/][github]
+[https://github.com/HanKin2015/][github]
 
 
 ## 外部超链接(External Hyperlink)
@@ -433,16 +433,16 @@ https://github.com/SeayXu/
 ```
 这篇文章来自我的Github,请参考 reference_。
 
-.. _reference: https://github.com/SeayXu/
+.. _reference: https://github.com/HanKin2015
 ```
 
 引用/参考(reference)，行内形式，引用的文字可以带有空格或者符号。
 
 ```
-这篇文章来自我的Github,请参考 `SeayXu <https://github.com/SeayXu/>`_。
+这篇文章来自我的Github,请参考 `HanKin2015 <https://github.com/HanKin2015/>`_。
 ```
 
-这篇文章来自我的Github,请参考 [SeayXu][github]。
+这篇文章来自我的Github,请参考 [HanKin2015][github]。
 
 
 ## 内部超链接|锚点(Internal Hyperlink)
@@ -519,11 +519,11 @@ __ SeayXu_
 ```
 这是 |logo| github的Logo，我的github用户名是:|name|。
 
-.. |logo| image:: https://help.github.com/assets/images/site/favicon.ico
-.. |name| replace:: SeayXu
+.. |logo| image:: https://github.com/HanKin2015/Storage/blob/master/images/dog.ico
+.. |name| replace:: HanKin2015
 ```
 
-这是 ![][logo] GitHub的Logo，我的github用户名是:SeayXu。
+这是 ![][logo] GitHub的Logo，我的github用户名是:HanKin2015。
 
 ## 脚注引用(Footnote Reference)
 
@@ -597,6 +597,6 @@ __ SeayXu_
 
 如果有不正确的地方，希望你能指出。
 
-[github]:https://github.com/SeayXu/
+[github]:https://github.com/HanKin2015/
 [rstqs]:http://docutils.sourceforge.net/docs/user/rst/quickref.html
-[logo]:https://help.github.com/assets/images/site/favicon.ico
+[logo]:https://github.com/HanKin2015/Storage/blob/master/images/dog.ico

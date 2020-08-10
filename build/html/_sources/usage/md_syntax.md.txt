@@ -126,16 +126,16 @@ alert(str);
 图片展示
 ```
 方式1：
-![文本内容](https://help.github.com/assets/images/site/favicon.ico "logo")
+![文本内容](https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "logo")
 方式2：
 ![文本内容][img]
-[img]:https://help.github.com/assets/images/site/favicon.ico "logo"
+[img]:https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "logo"
 ```
 方式1：
-![文本内容](https://help.github.com/assets/images/site/favicon.ico "logo")
+![文本内容](https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "logo")
 方式2：
 ![文本内容][img]
-[img]:https://help.github.com/assets/images/site/favicon.ico "logo"
+[img]:https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "logo"
 
 <h6 id="url-more">说明：</h6>
 
@@ -158,15 +158,15 @@ URL后面的内容是鼠标hover提示文本，可以省略，省略时就没有
 ### 文本链接
 给文本信息添加超链接
 ```
-1.<https://github.com/SeayXu>
-2.[文本链接](https://github.com/SeayXu "SeayXu")
+1.<https://github.com/HanKin2015>
+2.[文本链接](https://github.com/HanKin2015 "HanKin2015")
 3.[文本链接][id]
-[id]:https://github.com/SeayXu "SeayXu"
+[id]:https://github.com/HanKin2015 "HanKin2015"
 ```
-1.<https://github.com/SeayXu>
-2.[文本链接](https://github.com/SeayXu "SeayXu")
+1.<https://github.com/HanKin2015>
+2.[文本链接](https://github.com/HanKin2015 "HanKin2015"")
 3.[文本链接][id]
-[id]:https://github.com/SeayXu "SeayXu"
+[id]:https://github.com/HanKin2015 "HanKin2015"
 
 链接URL相关说明和图片一样，[请查看](#url-more)
 
@@ -174,24 +174,24 @@ URL后面的内容是鼠标hover提示文本，可以省略，省略时就没有
 当链接的文本内容和链接Id相同的时候，可以不用写链接后面的Id。
 ```
 [SeayXu][]
-[SeayXu]: https://github.com/SeayXu "Seay"
+[SeayXu]: https://github.com/HanKin2015 "HanKin2015"
 ```
 
 [SeayXu][]
-[SeayXu]: https://github.com/SeayXu "Seay"
+[SeayXu]: https://github.com/HanKin2015 "HanKin2015"
 
 ### 图片链接
 给图片加上超链接
 ```
 方式1：
-[![Github](https://help.github.com/assets/images/site/favicon.ico "Seay")](https://github.com/SeayXu  "SeayXu")
+[![Github](https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "dog")](https://github.com/HanKin2015 "HanKin2015")
 方式2：
 [![Github][img-url]][link-url]
-[link-url]:https://github.com/SeayXu "SeayXu"
-[img-url]:https://help.github.com/assets/images/site/favicon.ico "Seay"
+[link-url]:https://github.com/HanKin2015 "HanKin2015"
+[img-url]:https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "dog"
 ```
 方式1：
-[![Github](https://help.github.com/assets/images/site/favicon.ico "Seay")](https://github.com/SeayXu  "SeayXu")
+[![Github](https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "Seay")](https://github.com/HanKin2015 "HanKin2015")
 方式2：
 [![Github][github-img]][github-url]
 
@@ -282,7 +282,7 @@ URL后面的内容是鼠标hover提示文本，可以省略，省略时就没有
 >这是一段包含**加粗**的 _斜体_ 和 _**斜粗体**_ 并带有`高亮`显示的一段文本来自[我的Github](https://github.com/SeayXu "SeayXu")。
 我是图片：
 ![github logo][github-img]
-[github-url]:https://github.com/SeayXu "SeayXu"
+[github-url]:https://github.com/HanKin2015 "HanKin2015"
 ```
 >这是一段包含**加粗**的 _斜体_ 和 _**斜粗体**_ 并带有`高亮`显示的一段文本来自[我的Github](https://github.com/SeayXu "SeayXu")。
 我是图片：
@@ -308,6 +308,6 @@ Markdown也是可以实现简单的表格功能的.
 >- 左对齐是：`:---` ；居中是：`:---:`；右对齐是：`---:`。
 
 本文就介绍到这里，如有不足之处，可随时与我联系。
-
-[github-img]:https://help.github.com/assets/images/site/favicon.ico
-[github-url]:https://github.com/SeayXu "SeayXu"
+https://docs.github.com/en
+[github-img]:https://github.com/HanKin2015/Storage/blob/master/images/dog.ico
+[github-url]:https://github.com/HanKin2015 "HanKin2015"
