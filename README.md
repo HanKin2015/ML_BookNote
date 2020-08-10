@@ -60,12 +60,13 @@ html_theme = 'sphinx_rtd_theme'
 最终项目网站：https://ml-booknote.readthedocs.io
 
 显示特点：左侧栏显示文章的一级标题，分级显示
-注意：不要在md文件里面使用一个#符号作为标题，仅允许一个
+注意：不要在md文件里面使用一个#符号作为标题，仅允许一个（只要是一级标题）
 
 
 ## 7、后期维护使用
 访问网站：https://ml-booknote.readthedocs.io
 readthedocs网站（使用github账号登录）：https://readthedocs.org/
+项目：https://readthedocs.org/projects/ml-booknote/
 github仓库：https://github.com/HanKin2015/ML_BookNote.git
 
 - 在ML_BookNote\source\usage目录下添加新文章，支持md和rst文件

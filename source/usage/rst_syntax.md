@@ -7,9 +7,9 @@
 
 本文语法来自[Quick reStructuredText](http://docutils.sourceforge.net/docs/user/rst/quickref.html)
 
-# 行内样式
+## 行内样式
 
-## 斜体
+### 斜体
 
 重点、解释文字
 
@@ -21,7 +21,7 @@
 *重点(emphasis)通常显示为斜体*
 
 
-## 粗体
+### 粗体
 
 重点强调
 
@@ -31,7 +31,7 @@
 **重点强调(strong emphasis)通常显示为粗体**
 
 
-## 等宽
+### 等宽
 
 ```
 ``行内文本(inline literal)通常显示为等宽文本，空格可以保留，但是换行不可以。``
@@ -40,7 +40,7 @@
 行内文本(inline literal)通常显示为等宽文本，空格可以保留，但是换行不可以。
 
 
-# 章节标题
+## 章节标题
 
 章节头部由下线(也可有上线)和包含标点的标题 组合创建, 其中下线要至少等于标准文本的长度。
 
@@ -73,10 +73,15 @@
 """"""""
 ```
 
+```
 # 一级标题
 ## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+```
 
-# 一级标题
 ## 二级标题
 ### 三级标题
 #### 四级标题
@@ -85,16 +90,16 @@
 
 ---
 
-# 段落
+## 段落
 
 段落是被空行分割的文字片段，左侧必须对齐（没有空格，或者有相同多的空格）。
 
 缩进的段落被视为引文。
 
 
-# 列表
+## 列表
 
-## 符号列表(Bullet Lists)
+### 符号列表(Bullet Lists)
 
 符号列表可以使用 **-**、 __*__、**+** 来表示。
 
@@ -124,7 +129,7 @@
 + 符号列表4
 
 
-## 枚举(顺序)列表(Enumerated Lists)
+### 枚举(顺序)列表(Enumerated Lists)
 
 枚举列表算即顺序(序号)列表，可以使用不同的枚举序号来表示列表。
 
@@ -170,7 +175,7 @@ B. 枚举列表2
 C. 枚举列表3  
 
 
-## 定义列表(Definition Lists)
+### 定义列表(Definition Lists)
 
 定义列表可以理解为解释列表，即名词解释。
 
@@ -192,7 +197,7 @@ C. 枚举列表3
     这是定义2的内容
 
 
-## 字段列表(Field Lists)
+### 字段列表(Field Lists)
 
 ```
 :标题: reStructuredText语法说明
@@ -221,7 +226,7 @@ C. 枚举列表3
 语法说明。
 
 
-## 选项列表(Option Lists)
+### 选项列表(Option Lists)
 
 选项列表是一个类似两列的表格，左边是参数，右边是描述信息。当参数选项过长时，参数选项和描述信息各占一行。
 
@@ -247,9 +252,9 @@ C. 枚举列表3
 
 *由于格式问题，这里只是一个示例，实际上时没有上面的表头列和表格竖直线的。*
 
-# 块(Blocks)
+## 块(Blocks)
 
-## 文字块(Literal Blocks)
+### 文字块(Literal Blocks)
 
 文字块就是一段文字信息，在需要插入文本块的段落后面加上 **::**，接着一个空行，然后就是文字块了。
 
@@ -274,7 +279,7 @@ C. 枚举列表3
 ```
 这是新的一段。
 
-## 行块(Line Blocks)
+### 行块(Line Blocks)
 
 行块对于地址、诗句以及无装饰列表是非常有用的。行块是以 **|** 开头，每一个行块可以是多段文本。
 
@@ -296,7 +301,7 @@ C. 枚举列表3
 
 这是新的一段。
 
-## 块引用(Block Quotes)
+### 块引用(Block Quotes)
 
 块引用是通过缩进来实现的，引用块要在前面的段落基础上缩进。
 
@@ -328,7 +333,7 @@ C. 枚举列表3
     “人生的意志和劳动将创造奇迹般的奇迹。”
     —涅克拉索
 
-## 文档测试块(Doctest Blocks)
+### 文档测试块(Doctest Blocks)
 
 文档测试块是交互式的Python会话，以 **>>>** 开始，一个空行结束。
 
@@ -342,11 +347,11 @@ This is a doctest block.
 This is a doctest block.
 ```
 
-# 表格(Tables)
+## 表格(Tables)
 
 reStructuredText提供两种表格：网格表（Grid Tables），简单表（Simple Tables）。
 
-## 网格表(Grid Tables)
+### 网格表(Grid Tables)
 
 网格表中使用的符号有：**-**、**=**、**|**、**+**。
 
@@ -370,7 +375,7 @@ Grid table:
 
 效果请查看:[这里](http://docutils.sourceforge.net/docs/user/rst/quickref.html#tables)
 
-## 简单表(Simple Tables)
+### 简单表(Simple Tables)
 
 简单表相对于网格表，少了 **|** 和 **+** 两个符号，只用 **-** 和 **=** 表示。
 
@@ -392,7 +397,7 @@ True   True   True
 效果请查看:[这里](http://docutils.sourceforge.net/docs/user/rst/quickref.html#tables)
 
 
-# 分隔符
+## 分隔符
 
 分隔符就是一条水平的横线，是由 4 个 **-** 或者更多组成，需要添加换行。
 
@@ -411,11 +416,11 @@ True   True   True
 下面部分
 
 
-# 超链接
+## 超链接
 
 介绍各类带有链接性质的超链接
 
-## 自动超链接
+### 自动超链接
 
 reStructuredText会自动将网址生成超链接。
 
@@ -426,7 +431,7 @@ hhttps://github.com/HanKin2015
 [https://github.com/HanKin2015/][github]
 
 
-## 外部超链接(External Hyperlink)
+### 外部超链接(External Hyperlink)
 
 引用/参考(reference)，是简单的形式，只能是一个词语，引用的文字不能带有空格。
 
@@ -445,7 +450,7 @@ hhttps://github.com/HanKin2015
 这篇文章来自我的Github,请参考 [HanKin2015][github]。
 
 
-## 内部超链接|锚点(Internal Hyperlink)
+### 内部超链接|锚点(Internal Hyperlink)
 
 ```
 更多信息参考 引用文档_
@@ -466,7 +471,7 @@ hhttps://github.com/HanKin2015
 这是引用部分的内容
 
 
-## 匿名超链接(Anonymous hyperlink)
+### 匿名超链接(Anonymous hyperlink)
 
 词组(短语)引用/参考(phrase reference)，引用的文字可以带有空格或者符号，需要使用反引号引起来。
 
@@ -478,7 +483,7 @@ hhttps://github.com/HanKin2015
 这篇文章来自我的Github,请参考 [Quick reStructuredText][rstqs]。
 
 
-## 间接超链接(Indirect Hyperlink)
+### 间接超链接(Indirect Hyperlink)
 
 间接超链接是基于匿名链接的基础上的，就是将匿名链接地址换成了外部引用名_。
 
@@ -492,7 +497,7 @@ __ SeayXu_
 [SeayXu][github] 是 [我的 GitHub 用户名][github]。
 
 
-## 隐式超链接(Implicit Hyperlink)
+### 隐式超链接(Implicit Hyperlink)
 
 小节标题、脚注和引用参考会自动生成超链接地址，使用小节标题、脚注或引用参考名称作为超链接名称就可以生成隐式链接。
 
@@ -512,7 +517,7 @@ __ SeayXu_
 隐式链接到 [第一节 介绍](#id2)，即可生成超链接。
 
 
-## 替换引用(Substitution Reference)
+### 替换引用(Substitution Reference)
 
 替换引用就是用定义的指令替换对应的文字或图片，和内置指令(inline directives)类似。
 
@@ -524,7 +529,7 @@ __ SeayXu_
 
 这是 ![][logo] GitHub的Logo，我的github用户名是:HanKin2015。
 
-## 脚注引用(Footnote Reference)
+### 脚注引用(Footnote Reference)
 
 脚注引用，有这几个方式：有手工序号(标记序号123之类)、自动序号(填入#号会自动填充序号)、自动符号(填入*会自动生成符号)。
 
@@ -565,7 +570,7 @@ __ SeayXu_
 [[†]](#id13)<a id="id7"></a> 脚注内容六  
 [[‡]](#id14)<a id="id8"></a> 脚注内容七  
 
-## 引用参考(Citation Reference)
+### 引用参考(Citation Reference)
 
 引用参考与上面的脚注有点类似。
 
@@ -582,7 +587,7 @@ __ SeayXu_
 >[Two]<a id="id16"></a> 参考引用二
 
 
-# 注释(Comments)
+## 注释(Comments)
 
 注释以 **..** 开头，后面接注释内容即可，可以是多行内容，多行时每行开头要加一个空格。
 
