@@ -126,17 +126,12 @@ alert(str);
 图片展示
 ```
 方式1：
-![文本内容](https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico)
 方式2：
 ![文本内容][img]
-[img]:https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico
 ```
 方式1：
-![文本内容](https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico)
 方式2：
 ![文本内容][img]
-[img]:https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico
-
 <h6 id="url-more">说明：</h6>
 
 URL后面的内容是鼠标hover提示文本，可以省略，省略时就没有鼠标hover提示文本效果。
@@ -184,14 +179,11 @@ URL后面的内容是鼠标hover提示文本，可以省略，省略时就没有
 给图片加上超链接
 ```
 方式1：
-[![Github](https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico)](https://github.com/HanKin2015 "HanKin2015")
 方式2：
 [![Github][img-url]][link-url]
 [link-url]:https://github.com/HanKin2015 "HanKin2015"
-[img-url]:https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico
 ```
 方式1：
-[![Github](https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico)](https://github.com/HanKin2015 "HanKin2015")
 方式2：
 [![Github][github-img]][github-url]
 
@@ -309,5 +301,4 @@ Markdown也是可以实现简单的表格功能的.
 
 本文就介绍到这里，如有不足之处，可随时与我联系。
 https://docs.github.com/en
-[github-img]:https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico
 [github-url]:https://github.com/HanKin2015 "HanKin2015"
