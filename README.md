@@ -60,6 +60,7 @@ html_theme = 'sphinx_rtd_theme'
 最终项目网站：https://ml-booknote.readthedocs.io
 
 显示特点：左侧栏显示文章的一级标题，分级显示
+注意：不要在md文件里面使用一个#符号作为标题，仅允许一个
 
 
 ## 7、后期维护使用
@@ -69,7 +70,7 @@ github仓库：https://github.com/HanKin2015/ML_BookNote.git
 
 - 在ML_BookNote\source\usage目录下添加新文章，支持md和rst文件
 - 还需要在ML_BookNote\source\index.rst里面添加新的文件。。。
-- 使用anaconda窗口执行make html即可
+- 使用anaconda窗口执行make html即可(这步可以舍去，可以作为检测文件生成是否有异常)
 - 上库：先将项目上传到git上，然后使用readthedocs的Build version即可
 
 
