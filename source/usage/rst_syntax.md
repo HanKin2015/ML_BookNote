@@ -519,7 +519,7 @@ __ SeayXu_
 ```
 这是 |logo| github的Logo，我的github用户名是:|name|。
 
-.. |logo| image:: https://github.com/HanKin2015/Storage/blob/master/images/dog.ico
+.. |logo| image:: https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico
 .. |name| replace:: HanKin2015
 ```
 
@@ -599,4 +599,4 @@ __ SeayXu_
 
 [github]:https://github.com/HanKin2015/
 [rstqs]:http://docutils.sourceforge.net/docs/user/rst/quickref.html
-[logo]:https://github.com/HanKin2015/Storage/blob/master/images/dog.ico
+[logo]:https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico

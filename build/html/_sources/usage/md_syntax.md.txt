@@ -126,16 +126,16 @@ alert(str);
 图片展示
 ```
 方式1：
-![文本内容](https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "logo")
+![文本内容](https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico)
 方式2：
 ![文本内容][img]
-[img]:https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "logo"
+[img]:https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico
 ```
 方式1：
-![文本内容](https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "logo")
+![文本内容](https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico)
 方式2：
 ![文本内容][img]
-[img]:https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "logo"
+[img]:https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico
 
 <h6 id="url-more">说明：</h6>
 
@@ -184,14 +184,14 @@ URL后面的内容是鼠标hover提示文本，可以省略，省略时就没有
 给图片加上超链接
 ```
 方式1：
-[![Github](https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "dog")](https://github.com/HanKin2015 "HanKin2015")
+[![Github](https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico)](https://github.com/HanKin2015 "HanKin2015")
 方式2：
 [![Github][img-url]][link-url]
 [link-url]:https://github.com/HanKin2015 "HanKin2015"
-[img-url]:https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "dog"
+[img-url]:https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico
 ```
 方式1：
-[![Github](https://github.com/HanKin2015/Storage/blob/master/images/dog.ico "Seay")](https://github.com/HanKin2015 "HanKin2015")
+[![Github](https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico)](https://github.com/HanKin2015 "HanKin2015")
 方式2：
 [![Github][github-img]][github-url]
 
@@ -279,12 +279,12 @@ URL后面的内容是鼠标hover提示文本，可以省略，省略时就没有
 ## 引用
 引用内容可以嵌套引用和使用其他语法，在引用内容后面空一行就表示引用结束。
 ```
->这是一段包含**加粗**的 _斜体_ 和 _**斜粗体**_ 并带有`高亮`显示的一段文本来自[我的Github](https://github.com/SeayXu "SeayXu")。
+>这是一段包含**加粗**的 _斜体_ 和 _**斜粗体**_ 并带有`高亮`显示的一段文本来自[我的Github](https://github.com/HanKin2015 "HanKin2015")。
 我是图片：
 ![github logo][github-img]
 [github-url]:https://github.com/HanKin2015 "HanKin2015"
 ```
->这是一段包含**加粗**的 _斜体_ 和 _**斜粗体**_ 并带有`高亮`显示的一段文本来自[我的Github](https://github.com/SeayXu "SeayXu")。
+>这是一段包含**加粗**的 _斜体_ 和 _**斜粗体**_ 并带有`高亮`显示的一段文本来自[我的Github](https://github.com/HanKin2015 "HanKin2015")。
 我是图片：
 ![github logo][github-img]
 
@@ -309,5 +309,5 @@ Markdown也是可以实现简单的表格功能的.
 
 本文就介绍到这里，如有不足之处，可随时与我联系。
 https://docs.github.com/en
-[github-img]:https://github.com/HanKin2015/Storage/blob/master/images/dog.ico
+[github-img]:https://raw.githubusercontent.com/HanKin2015/Storage/master/images/dog.ico
 [github-url]:https://github.com/HanKin2015 "HanKin2015"
